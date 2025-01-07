@@ -3,7 +3,7 @@
 if [ -f $BUGZILLA_ROOT/needs_configure ]
 then
   cat <<EOF > /checksetup_answers.txt
-\$answer{'ADMIN_EMAIL'} = '$ADMIN_EMAIL'; 
+\$answer{'ADMIN_EMAIL'} = '$ADMIN_EMAIL';
 \$answer{'ADMIN_OK'} = 'Y';
 \$answer{'ADMIN_PASSWORD'} = '$ADMIN_PASSWORD';
 \$answer{'ADMIN_REALNAME'} = 'Admin';
@@ -15,7 +15,7 @@ then
 \$answer{'db_host'} = '$BUGS_DB_HOST';
 \$answer{'db_name'} = '$BUGS_DB_NAME',
 \$answer{'db_pass'} = '$BUGS_DB_PASS';
-\$answer{'db_port'} = 0;
+\$answer{'db_port'} = '$BUGS_DB_PORT';
 \$answer{'db_sock'} = '';
 \$answer{'db_user'} = '$BUGS_DB_USER';
 \$answer{'diffpath'} = '/usr/bin';
